@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(20, 20, 20);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(73, 73, 73);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(0, 0, 0);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+
+
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px;
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            box-shadow: 0px 0px 9px 4px rgb(36, 36, 36); 
+            animation: glowShadow 1.5s linear infinite alternate;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            animation: glowImage 1.5s linear infinite alternate;
+        }
+
+        @keyframes glowShadow {
+            to {
+                box-shadow: 0px 0px 35px 15px rgb(73, 73, 73);
+            }
+        }
+
+        @keyframes glowImage {
+            to {
+                -webkit-filter: brightness(2);
+                filter: brightness(2);
+            }
+        }
+
+        .purple {
+            color: rgb(73, 73, 73);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 80px 0;
+        }
+
+        main hr {
+            border: 0;
+            background: #777777;
+            height: 1.3px;
+            margin: 60px 84px;
+        }
+
+        .secondSection {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: grey;
+            font-size: 1.0rem;
+
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vm;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px 0;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .myself {
+            font-size: small;
+        }
+
+        .real {
+
+            margin: auto;
+        }
+        .social{
+            text-indent: 10px ;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        footer{
+    background-color: #211e39;
+}
+
+footer {
+    margin-top: 180px;
+    background-color: rgb(73, 73, 73);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .link-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .link-group a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+footer .link-group a:hover {
+    color: #fca61f;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .social-links button {
+    border: none;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer .social-links button:hover {
+    transform: translateY(-10px);
+    color: #fff;
+}
+
+footer .social-links .dribble {
+    color: #f33a7e;
+}
+
+footer .social-links .dribble:hover {
+    background-color: #f33a7e;
+}
+
+footer .social-links .whatsapp {
+    color: #25D366;
+}
+
+footer .social-links .whatsapp:hover {
+    background-color: #25D366;
+}
+
+footer .social-links .behance {
+    color: #255afc;
+}
+
+footer .social-links .behance:hover {
+    background-color: #255afc;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: #6c757d;
+    margin: 20px auto;
+    width: 80%;
+}
+
+footer p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">MY PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</li></a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi , My name is <span class="purple">Sagar</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="myself">I aim to build a successful career as a Web developer and Java Developer with a
+                    focus on continuous learning and growth,
+                    with expertise in Java as well as web development and experience in the mentioned skills through
+                    independent projects and internships.
+                    I seek to enhance my technical skills and contribute to diverse projects. For the organization, I
+                    intend to develop innovative solutions,
+                    leveraging problem solving abilities and a collaborative mindset. Expecting to work in an
+                    environment that fosters creativity, encourages skill development,
+                    and values teamwork.
+                </div>
+            </br>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sagar-bisht-235b25273/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/sagarbisht1710">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="prw.png.png" alt="" ; </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <samp class="text-gray"></samp>
+            <h1>My Projects</h1>
+        <div id="project">
+        
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">Blackjack Game (JAVA)</div>
+                    <div class="vertical-desc">Blackjack is a popular card game where players aim to reach a hand value
+                        of 21 without exceeding it.
+                        In Java, the game can be implemented using object-oriented principles,
+                        including classes for **Deck, Card, Player, and Dealer**. The game logic involves dealing cards,
+                        handling bets, checking for blackjack, and implementing hit/stand actions.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Hotstar-Clone (Website)</div>
+                    <div class="vertical-desc">A Hotstar clone using **HTML, CSS, JavaScript, and React** replicates the
+                        UI and core functionalities of the streamingplatform.
+                        It includes **a responsive homepage, movie/TV show listings, a video player, user
+                        authentication, and search features**.
+                        React ensures dynamic UI updates, while CSS provides an attractive, mobile-friendly layout for
+                        seamless streaming.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Count-Down-Timer (Website)</div>
+                    <div class="vertical-desc">A **Countdown Timer** using **HTML, CSS, and JavaScript** dynamically
+                        tracks time until a specified event. HTML structures the timer display, CSS styles it for a
+                        visually appealing look, and JavaScript controls the countdown logic. It updates in real-time,
+                        supports custom deadlines, and can trigger alerts or actions when time expires.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Image-Slider (Website)</div>
+                    <div class="vertical-desc">An **Image Slider** using **HTML, CSS, and JavaScript** displays multiple
+                        images in a dynamic carousel. HTML structures the slider, CSS styles it for smooth transitions,
+                        and JavaScript enables automatic or manual navigation using buttons or swipe gestures. It
+                        enhances user experience by showcasing images interactively with animations and responsive
+                        design.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Traveling (Website)</div>
+                    <div class="vertical-desc">A **traveling website** using **HTML, CSS, and JavaScript** provides
+                        users with destination details, booking options, and travel guides. HTML structures the content,
+                        CSS ensures an attractive and responsive design, and JavaScript enables interactive features
+                        like search filters, carousels, and real-time booking. It enhances trip planning with a seamless
+                        user experience.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer class="text-center text-muted py-4">
+        <h3 class="text-white pt-4">Portfolio</h3>
+
+        <div class="social-links mt-5">
+            <button class="rounded-pill dribble">
+                <i class="fa-brands fa-dribbble"></i>
+            </button>
+            <button class="rounded-pill whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+            <button class="rounded-pill behance">
+                <i class="fa-brands fa-behance"></i>
+            </button>
+        </div>
+        <hr class="text-muted my-4" />
+        <p>Hope you enjoy my portfolio!   | Thank you for your time.  </p>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
